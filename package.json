@@ -1,6 +1,6 @@
 {
   "name": "hardhat-vite",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Hardhat plugin wrapping Vite to configure and launch dApps.",
   "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
   "repository": "projectsophon/hardhat-vite",
