@@ -3,7 +3,11 @@
   "extends": "@projectsophon/tsconfig",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "../dist"
+    "outDir": "../dist",
+    // Hardhat tasks only work in CJS mode
+    "module": "commonjs",
+    "preserveValueImports": false,
+    "checkJs": false
   },
   // Ref https://stackoverflow.com/a/61467483
   "references": [{ "path": "../" }]

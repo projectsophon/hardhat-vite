@@ -25,7 +25,9 @@
     "build": "tsc --build src",
     "watch": "tsc --build src -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vite": "^3.1.0"
+  },
   "peerDependencies": {
     "hardhat": "^2.0.0"
   },
@@ -56,6 +58,7 @@
     "bundler",
     "bundle",
     "serve",
-    "client"
+    "client",
+    "web3"
   ]
 }

@@ -5,7 +5,11 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": ".",
-    "composite": true
+    "composite": true,
+    // Hardhat tasks only work in CJS mode
+    "module": "commonjs",
+    "preserveValueImports": false,
+    "checkJs": false
   },
   "files": ["package.json"]
 }
