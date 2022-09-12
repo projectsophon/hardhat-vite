@@ -1,0 +1,61 @@
+{
+  "name": "hardhat-vite",
+  "version": "0.0.0",
+  "description": "Hardhat plugin wrapping Vite to configure and launch dApps.",
+  "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
+  "repository": "projectsophon/hardhat-vite",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">=14"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "lint": "eslint .",
+    "pretest": "npm run build",
+    "test": "mocha --recursive 'test/**/*.test.ts'",
+    "format": "prettier --write .",
+    "build": "tsc --build src",
+    "watch": "tsc --build src -w"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "hardhat": "^2.0.0"
+  },
+  "devDependencies": {
+    "@projectsophon/eslint-config": "^0.2.2",
+    "@projectsophon/prettier-config": "^0.1.1",
+    "@projectsophon/tsconfig": "^0.1.1",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^14.14.22",
+    "chai": "^4.3.6",
+    "eslint": "^8.23.1",
+    "hardhat": "^2.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "4.7.x"
+  },
+  "prettier": "@projectsophon/prettier-config",
+  "eslintConfig": {
+    "extends": "@projectsophon/eslint-config"
+  },
+  "keywords": [
+    "vite",
+    "hardhat",
+    "plugin",
+    "dapp",
+    "bundler",
+    "bundle",
+    "serve",
+    "client"
+  ]
+}
